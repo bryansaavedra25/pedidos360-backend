@@ -1,0 +1,9 @@
+{
+  "name": "rabbitmq-demo",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [5672, 15672, 8080, 5173],
+  "postCreateCommand": "docker compose version"
+}
