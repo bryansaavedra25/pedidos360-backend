@@ -89,7 +89,7 @@ sudo journalctl -u pedidos360 -f
 
 
 
-👨‍💻 Autor
+## 👨‍💻 Autor
 Bryan Saavedra, Elena espinoza
 Asignatura: Desarrollo Cloud Native I 
 Duoc UC - 2026
