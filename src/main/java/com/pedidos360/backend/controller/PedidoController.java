@@ -34,6 +34,11 @@ public class PedidoController {
         return pedidoService.crear(nuevo);
     }
 
+    @PutMapping("/{id}")
+    public Pedido actualizar(@PathVariable Long id, @Valid @RequestBody Pedido datosActualizados) {
+        return pedidoService.actualizar(id, datosActualizados);
+    }
+
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void eliminar(@PathVariable Long id) {

@@ -44,6 +44,15 @@ public class PedidoService {
         return nuevo;
     }
 
+    public Pedido actualizar(Long id, Pedido datosActualizados) {
+        Pedido pedidoExistente = buscarPorId(id);
+        pedidoExistente.setCliente(datosActualizados.getCliente());
+        pedidoExistente.setTotal(datosActualizados.getTotal());
+        pedidoExistente.setEstado(datosActualizados.getEstado());
+        inventarioPedidos.put(id, pedidoExistente);
+        return pedidoExistente;
+    }
+
     public void eliminar(Long id) {
         if (!inventarioPedidos.containsKey(id)) {
             throw new PedidoNoEncontradoException(id);
