@@ -84,13 +84,13 @@ sudo systemctl restart pedidos360
 sudo systemctl status pedidos360
 
 
+# Inspeccionar logs en tiempo real
+sudo journalctl -u pedidos360 -f
 
-Autor
+
+
+👨‍💻 Autor
 Bryan Saavedra, Elena espinoza
 Asignatura: Desarrollo Cloud Native I 
 Duoc UC - 2026
 
-
-
-# Inspeccionar logs en tiempo real
-sudo journalctl -u pedidos360 -f
